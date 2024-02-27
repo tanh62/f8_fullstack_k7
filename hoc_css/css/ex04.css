@@ -1,0 +1,20 @@
+#menu {
+    width: 500px;
+    border: solid rgb(219, 122, 122);
+    height: 80px;
+    background-color: #f0efee;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 20px;
+
+}
+
+#menu ul {
+    margin-top: 42px;
+}
+
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 50px;
+}

@@ -1,0 +1,30 @@
+.feedback {
+    margin: auto;
+    width: 1000px;
+    text-align: center;
+}
+
+.feedback>h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.feedback-list {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feedback-items {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+}
+
+.feedback-items>img {
+    margin-right: 20px;
+    width: 80px;
+    height: 65px;
+
+}
