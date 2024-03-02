@@ -1,0 +1,35 @@
+/* selector cung cap( cung 1  thẻ html)
+==> không quan tâm đén thứ tự, trừ trường hợp tagname ở đầu 
+vd: a.link#link-> chọn thẻ a có class= link và id =link
+ứng dụng: trong: 
+- trong các tính huống không sử dụng html
+- đẩy độ ưu tiên lên cao hơn
+
+*/
+
+
+h1.title {
+    color: red;
+}
+
+h2.title {
+    color: aqua;
+}
+
+seletor nam sau ul~p {
+    color: red;
+}
+
+.todos input:checked~span {
+    text-decoration: line-through;
+}
+
+
+seletor nam sau lien ke h2+h2 {
+    color: red;
+}
+
+selector gộp: nhiều selector sự dụng 1 block code p+h2,
+p+h2+h2 {
+    color: red;
+}

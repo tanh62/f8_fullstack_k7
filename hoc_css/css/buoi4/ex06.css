@@ -1,0 +1,28 @@
+/*
+attribute selector
+tag[attribute] : chọn thẻ tag có thuộc tính attribute
+tag[attribute] : chọn thẻ tag có thuộc tính attribute=value
+tag[attribute] : chọn thẻ tag có thuôcj tính attribute có giá trị bắt đầu là value
+
+ul li a[target] {
+    color: aqua
+}
+
+ul li a[href^="fullstack.edu.vn"] {
+    color: aqua;
+} 
+
+ul li a[href*="fullstack.edu.vn"] {
+    color: aqua;
+} 
+
+ul li [href$=".net"] {
+    color: aqua;
+} 
+.row [class^="col-"] {
+    color: red;
+} */
+.box * {
+    background-color: aqua;
+    color: aliceblue;
+}
