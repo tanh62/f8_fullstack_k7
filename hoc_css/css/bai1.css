@@ -13,43 +13,43 @@ footer {
     padding: 30px;
 }
 
-
+h1 {}
 
 span {
     color: #ffaa00;
 }
 
-.wrapper-2 {
+.form-wrapper {
     display: flex;
     margin-top: 10px;
 }
 
-.wrapper-2 input {
+.form-wrapper input {
     margin-right: 5px;
     padding: 10px;
     background-color: #fff;
 }
 
-
-.wrapper-2 button {
-    height: 30px;
-    border-radius: 3px;
+.form-wrapper input,
+.form-wrapper button {
+    height: 33px;
+    border-radius: 5px;
 }
 
-.wrapper-2 button {
+.form-wrapper button {
     width: 162px;
-    background: rgb(241, 241, 67);
+    background: rgb(230, 230, 13);
 }
 
 footer:hover input::placeholder {
-    color: #fcb528;
+    color: #ffaa00;
 }
 
 footer:hover input {
-    background-color: #f8f4f4;
+    background-color: #ddd;
 }
 
 footer:hover button {
-    background-color: #f7b229;
-    color: #f8efef;
+    background-color: #ffaa00;
+    color: #fff;
 }

@@ -2,30 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bai2.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="./bai2.css" />
 </head>
 
 <body>
-    <p>RESERVATION</p>
-    <h1>Book your table</h1>
-    <table>
-        <tr>
-            <td><input type="text" name="name" placeholder="NAME" /></td>
-            <td><input type="text" name="email" placeholder="EMAIL" /></td>
-        </tr>
-        <tr>
-            <td><input type="text" name="date" placeholder="DATE" /></td>
-            <td><input type="text" name="time" placeholder="TIME" /></td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="PEOPLE" /></td>
-            <td><button type="submit">Find A Table</button></td>
-        </tr>
-    </table>
-
+    <form>
+        <div class="btn">
+            <p><span>RESERVATION</span></p>
+        </div>
+        <h1>Book your table</h1>
+        <div class="wrapper">
+            <div class="wrapper-1">
+                <input type="text" id="name" placeholder="NAME" />
+                <input type="text" id="date" placeholder="DATE" />
+                <input type="text" id="people" placeholder="PEOPLE" />
+            </div>
+            <div class="wrapper-2">
+                <input type="email" id="email" placeholder="EMAIL" />
+                <input type="text" id="time" placeholder="TIME" />
+                <button>Find A Table</button>
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>
