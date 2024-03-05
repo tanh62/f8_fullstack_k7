@@ -1,0 +1,120 @@
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1 {
+    font-family: lobster;
+}
+
+p>span {
+    color: red;
+}
+
+::placeholder {
+    font-size: 1.7rem;
+    font-family: "Lato", sans-serif;
+    font-style: bold;
+    padding-left: 2rem;
+}
+
+.btn {
+    color: aliceblue;
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+.icon-1,
+.icon-2,
+input,
+select {
+    margin-top: 5px;
+    font-size: 2rem;
+
+}
+
+.icon-1,
+.font_icon {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    width: 5rem;
+    height: 4.5rem;
+    background: #333;
+}
+
+.icon-1 i {
+    position: absolute;
+    top: 1.5rem;
+    left: 3px;
+}
+
+.icon-2 i {
+    color: rgb(158, 95, 6);
+    font-size: 1rem;
+    position: absolute;
+    top: 1.8rem;
+    left: 850px;
+}
+
+.font_icon {
+    font-size: 2rem;
+    height: 10.5rem;
+
+}
+
+.font_icon i {
+    position: absolute;
+    top: 1.7rem;
+    left: 1.7rem;
+}
+
+.warp select {
+    padding-left: 2rem;
+    width: 50.7rem;
+    height: 4.5rem;
+}
+
+
+.warp input {
+    width: 50rem;
+    height: 4rem;
+}
+
+.btn textarea {
+    min-width: 50.2rem;
+    height: 10rem;
+}
+
+.btuton_checkbox {
+    font-size: 2rem;
+    margin-top: 10px;
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 5px;
+    color: white;
+    border: none;
+    outline: none;
+    width: 12rem;
+    height: 3rem;
+    background: #ef493e;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-end;
+    height: 4rem;
+    width: auto;
+
+}

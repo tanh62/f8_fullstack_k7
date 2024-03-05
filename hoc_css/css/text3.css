@@ -1,0 +1,33 @@
+ /*
+font-size: thay đổi cỡ chữ
+cú pháp : font-size:value + unit
+-px
+-em
+-rem
+
+font-size: laf thuộc tính kế thừa( n/16x100%)
+--------------------------------------------------
+
+
+
+
+*/
+ html {
+     font-size: 62.5%;
+ }
+
+ body {
+     font-size: 1.6rem;
+ }
+
+ .content {
+     font-size: 1.5rem;
+ }
+
+ .content h2 {
+     font-size: 2.9rem;
+ }
+
+ .content p {
+     font-size: 2rem;
+ }

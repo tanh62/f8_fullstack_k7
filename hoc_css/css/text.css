@@ -1,0 +1,91 @@
+/*
+thuộc tính line-height: thiết lập chiều cao của dòng chữ
+cú pháp: line-height: value + unit hoặc value
+thuộc tính font-family: thiết lập font chữ cho vaen bản
+cú pháp :font-famly: font1, font2 ,...
+*/
+
+.content {
+    font-size: 30px;
+    line-height: 1.5;
+
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(hoc_css/font/OpenSans-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(hoc_css/font/OpenSans-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(hoc_css/font/OpenSans-Medium.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(hoc_css/font/OpenSans-Bold.ttf);
+    font-weight: 900;
+}
+
+body {
+    font-family: OpenSans;
+    font-weight: 700;
+}
+
+
+
+/* text-decoration: non| underline | overline | line-through */
+p {
+    text-decoration: overline underline line-through;
+}
+
+/* text- tranform: non | uppercase | lowercase | capitalize */
+p {
+    text-transform: capitalize
+}
+
+/* -letter-spacing
+    */
+p {
+    letter-spacing: 10px;
+}
+
+
+/* -word-spacing */
+p {
+    word-spacing: 5px;
+}
+
+/* text-indent */
+p {
+    text-indent: 10px;
+}
+
+p {
+    word-wrap: break-word;
+    word-break: break-all;
+
+
+}
+
+/* justtify :  căn đều 2 bên */
+
+.content {
+    text-align: center;
+}
+
+.wrap-span {
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+}
