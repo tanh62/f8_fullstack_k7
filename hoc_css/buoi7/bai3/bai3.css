@@ -1,0 +1,148 @@
+h2 {
+    color: #3f3424;
+    font-family: "Asap", sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.title {
+    margin-left: 40px;
+}
+
+.font {
+    font-family: "Asap", sans-serif;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    margin-left: 10px;
+    color: #3f3424;
+    font-family: "Asap", sans-serif;
+    font-size: 11px;
+    background-color: rgba(192, 192, 192, 0.255);
+    border: 1px solid rgba(192, 192, 192, 0.255);
+    border-radius: 35px;
+}
+
+button>span {
+    font-style: italic;
+}
+
+button:hover {
+    background-color: rgba(165, 130, 42, 0.951);
+    color: #fff;
+}
+
+.location-two {
+    width: 350px;
+    margin-left: 50px;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+.location-nine {
+    width: 350px;
+    height: 197px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+.location-seven {
+    width: 350px;
+    border-radius: 5px;
+    margin-left: 20px;
+    box-shadow: inset;
+}
+
+.location {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+
+.other-one {
+    width: 350px;
+    height: 240px;
+    margin-left: 50px;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+.other-two {
+    width: 350px;
+    height: 240px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+.other-three {
+    width: 350px;
+    height: 240px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+.other-location {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nothing {
+    height: 90px;
+}
+
+.nothing-else {
+    height: 120px;
+}
+
+.title-1 {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    color: #fff;
+    font-family: "Asap", sans-serif;
+}
+
+.title-2 {
+    position: absolute;
+    top: 150px;
+    left: 445px;
+    color: #fff;
+    font-family: "Asap", sans-serif;
+}
+
+.title-3 {
+    position: absolute;
+    top: 150px;
+    left: 820px;
+    color: #fff;
+    font-family: "Asap", sans-serif;
+}
+
+.title-4 {
+    position: absolute;
+    top: 370px;
+    left: 70px;
+    color: #fff;
+    font-family: "Asap", sans-serif;
+}
+
+.title-5 {
+    position: absolute;
+    top: 370px;
+    left: 445px;
+    color: #fff;
+    font-family: "Asap", sans-serif;
+}
+
+.title-6 {
+    position: absolute;
+    top: 370px;
+    left: 820px;
+    color: #fff;
+    font-family: "Asap", sans-serif;
+}

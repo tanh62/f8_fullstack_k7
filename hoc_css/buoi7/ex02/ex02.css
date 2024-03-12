@@ -1,0 +1,45 @@
+/* box-sizing
+-content-box
+-border-box
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px solid red;
+    width: 300px;
+    margin: 50px auto;
+    padding: 10px;
+
+}
+
+/*  thuộc tính díplay: thay đổi chế độ hiển thị của 1 thẻ html
+-none: ẩn
+-block: hiển thị dưới dạng block
+-inline : hiển thị dưới dạng inline
+-inline block : kết hợp inline và block
+chú ý : thuộc tính display có rất nhiều giá trị :
+-flex , inline-flex
+-grid, inline-grid
+-table
+
+thuộc tính opacity: trong suốt 1 thẻ html theo tỷ lệ 0->1
+- */
+
+.title {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 10px 20px;
+}
+
+.title:hover {
+    /* display: none;   -ẩn mất không gian */
+    visibility: hidden;
+    /* ẩn không mất không gian, giữ không gian */
+
+}
+
+/* timf hiểu về float và position */

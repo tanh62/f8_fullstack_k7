@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.head {
+    position: relative;
+}
+
+.box {
+    width: 300px;
+    margin-top: -50px;
+}
+
+a {
+    text-decoration: none;
+    color: #3f3424;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.picture {
+    width: 100%;
+    height: 500px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    position: absolute;
+    bottom: -20px;
+}
+
+.title {
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    position: absolute;
+    left: 430px;
+    bottom: 120px;
+    font-family: "Asap", sans-serif;
+}
+
+.info>ul {
+    display: flex;
+    padding-left: 65%;
+}
+
+.info>ul>li {
+    list-style-type: none;
+    padding-left: 30px;
+    font-family: "Asap", sans-serif;
+}
+
+.info>ul li:hover a {
+    color: rgb(255, 0, 0);
+    box-shadow: 0 3px rgb(255, 0, 0);
+    transition: box-shadow 0.2s;
+}

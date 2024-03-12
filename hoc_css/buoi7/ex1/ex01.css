@@ -1,0 +1,138 @@
+/*
+min-width-----------width----------max width
+
+.content {
+    width: 200px;
+    height: 200px;
+    max-width: 400px;
+    color: blue;
+}
+*/
+.image {
+    display: inline-block;
+    width: 10%;
+    border: 1px solid blue;
+}
+
+img {
+
+    .image max-width: 100%;
+    display: block;
+}
+
+
+
+/* overflow::
+-visible : hiển thị nội dung bị tràn( mặc định)
+-hidden: ẩn nội dung bị tràn
+-scroll: ẩn và hiển thị thanh cuộn (lúc nào cũng hiển thị thanh cuộn)
+-auto: ẩn và hiện thị thanh cuộn (chỉ hiển thị thanh cuộn)
+
+-overflow-x: trục x
+-overflow-y: trục y
+*/
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+
+.box p {
+    width: 400px;
+}
+
+
+
+/* padding- margin
+-padding-top:
+-padding-left
+-padding-right
+-padding-bottom
+
+-không có giá trị âm , không có auto
+padding,margin không thiết lập được bottom nếu là inline
+-nếu đơn vị là % thì sẽ tỷ lệ theo width của thẻ cha
+
+-margin-top
+-margin-left
+-margin-right
+-margin-bottom
+
+trường hợp 1 : (title)
+[- 2 giá trị dơng sẽ lấy giá trị lớn hơn
+- 2 gía trị âm sẽ lấy giá trị nhỏ hơn]
+--->nếu cùng dấu thì lấy trị tuyệt đối giá trị lớn hơn
+
+
+- 1 giá trị âm , 1 giá trị dương  sẽ côngj 2 giá trị
+---> trái dấu thì cộng lại 
+*/
+.table {
+    width: 300px;
+    border: 1px solid red;
+    padding: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+}
+
+.btn {
+    text-decoration: none;
+    background: rgb(69, 69, 68);
+    color: rgb(248, 249, 249);
+    padding: 5px 15px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.text span {
+    border: 1px solid red;
+    padding: 30px 0;
+}
+
+h2 {
+    /* "trường hợp 1" */
+    border: 1px solid red;
+    margin: 0;
+}
+
+.title-1 {
+    margin-bottom: 10px;
+}
+
+.title-2 {
+    margin-bottom: 10px;
+}
+
+
+
+.bcn {
+    background: green;
+    color: aliceblue;
+    /* border: 1px solid red; */
+    /* display: inline-block; */
+    width: 100px;
+    padding-inline: 30px;
+    padding-block: 50px;
+    margin-inline: auto;
+
+}
+
+/* .bcn h2 {
+    margin: 50px 0;
+} */
+
+/* trương trường howpj 2
+ margin phần tử con không tự động đẩy phần tử cha
+ -display:inline-block
+ -border
+ -position: asobulte | fixed
+ -float : left | right
+*/
