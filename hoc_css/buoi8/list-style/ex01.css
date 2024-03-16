@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 300px;
+    border: 1px solid red;
+    margin: 30px auto;
+}
+
+/* vào bên trong */
+.box ul {
+    list-style-position: none;
+    list-style-type: none
+}
+
+/* list-style-type: none;  kiểu danh sách : 
+    -none : không ở định dạng danh sách
+    - dics : mặc định của ul 
+    - circle:
+    -decimal:
+    -decimal -leading-zeros
+    -lower-alpha:
+    -upper-alpha:
+    -lower-roman: 
+    -upper-roman:
+    list- style - image : thay biểu tượng bằng hình ảnh ( không khuyên khích ) --> nên thay thế bằng background kết hợp ::before */

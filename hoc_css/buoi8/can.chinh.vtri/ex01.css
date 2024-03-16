@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* thuộc tính position:
+-static : mặc định
+-relative:vị trí tương đối với vị trí ban đầu
+-asobule: vị trí tuyệt đối
+-fixed: vị trí cố định khi kéo thanh cuộn (scrolling) 
+
+--> các thuộc tính khi sd position ( trừ static) : top: trên | left: trái  | right: phải | bottom: dưới | z-index: vị trí theo trục z | 
+inset: tổng hợp của top ,left ,right , bottom
+
+*/
+.box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin: 30px auto;
+    position: relative;
+    /* về đúng thành phần cha  */
+}
+
+.box .item {
+    background: green;
+    color: antiquewhite;
+    /* margin: 30px; */
+    */ padding: 10px;
+    width: 100px;
+}
+
+.item:nth-child(2) {
+    background: gray;
+    /* position: relative;
+    /* không làm thay đổi vị trí ban đầu */
+    /* top: 20px;
+    left: 20px;
+    left: calc(100% - 100px - 10px); */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.8;
+}
