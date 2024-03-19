@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.item {
+    padding: 30px;
+    width: 330px;
+    height: 270px;
+    margin: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    position: relative;
+}
+
+.item i.fa-car {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.item .content {
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s linear;
+}
+
+.content p {
+    color: gray;
+}
+
+.item:hover .content {
+    position: absolute;
+    color: #fff;
+    top: 20px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.link i {
+    padding: 2px;
+    opacity: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    color: white;
+    cursor: pointer;
+}
+
+.link {
+    position: absolute;
+    top: 250px;
+    transition: all 0.2s linear;
+    z-index: 3;
+}
+
+.item:hover .link {
+    opacity: 1;
+    top: 200px;
+}
+
+.item:hover .link i {
+    opacity: 1;
+}
+
+.item:hover {
+    background-image: url(https://picsum.photos/536/354);
+    object-fit: contain;
+}

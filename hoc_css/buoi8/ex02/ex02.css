@@ -26,18 +26,29 @@ body {
     border-radius: 5px;
 }
 
-.menu ul li {
+.menu li {
     display: inline-block;
 }
 
-.menu ul li a {
+.menu li a {
     display: block;
     padding: 10px 20px;
     background: red;
     font-size: initial;
 }
 
-.menu ul li a:hover {
+.menu li a:hover {
     background: green;
     border-radius: 5px;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    background: bisque;
+    min-width: 200px;
+}
+
+.menu li:hover ul {
+    display: block;
 }

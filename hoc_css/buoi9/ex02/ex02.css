@@ -1,0 +1,58 @@
+/*
+ flex = flexible box module:
+ -là kĩ thuật chia layout linh hoạt
+ -Trục : main và cross
+ -thành phần : flex container và flex item
+
+
+ 1. các thuộc tính trong nnhoms flex container:
+ -display :flex----> kích hoạt flex
+ -flex-direction: chọn hướng cho trục chính
+ + row---> mặc định
+ + colum
+ +row-reverse
+ +colmn-reverse
+
+ -justify-content: căn chỉnh các item theo hướng song song với trục chính
+ + flex-start
+ +flex-end
+ +center
+ +space-betwwen
+ +space-around
+ +space-evenly
+ +start
+ +end
+
+
+ -align-items: căn chỉnh các items theo hướng vuông góc với trục chính
+ +strech
+ +flex-start
+ +center
+ +flex-end
+ +baseline
+
+(align-content
+flex-warp
+gap 
+row-gap
+column-gap)
+
+
+ */
+
+.box {
+    width: 400px;
+    height: 300px;
+    border: 1px solid rgb(230, 26, 26);
+    margin: 30px auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.item {
+    background: green;
+    color: #f7eded;
+    padding: 10px;
+    border: 1px solid #ffff;
+}
