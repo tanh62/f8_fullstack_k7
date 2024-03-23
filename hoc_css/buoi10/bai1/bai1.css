@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+.burger-menu {
+    width: 100%;
+    height: 730px;
+    background-color: rgb(82, 152, 237);
+    position: relative;
+}
+
+.title {
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title p {
+    font-size: 20px;
+}
+
+span {
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+.content {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-bottom-right-radius: 99px;
+}
+
+input {
+    display: none;
+}
+
+.info {
+    display: none;
+    padding-left: 70px;
+    padding-top: 50px;
+}
+
+.info li {
+    list-style: none;
+    width: 130px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.info li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: var(--icon-color);
+}
+
+
+input[type="checkbox"]:checked~label>.fa-arrow-right {
+    visibility: visible;
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked~label>.info {
+    display: block;
+    background-color: rgb(250, 250, 250);
+    width: 1490px;
+    height: 730px;
+}
+
+.info li:hover a {
+    color: #333;
+    background-color: rgb(250, 250, 250);
+    display: block;
+}

@@ -31,23 +31,45 @@
  +flex-end
  +baseline
 
-(align-content
+align-content : căn chỉnh hàng trong trơngf hợp( flex-diretion là row)
+                căn chỉnh cột trong trươngf hợp (flex-diretion là column)
+--> chỉ áp dụng khi có từ 2 hàng
 flex-warp
-gap 
-row-gap
-column-gap)
+gap :tạo khoảng cách giữa các items
+row-gap: khoảng cách giữa các cột
+column-gap: khoảng cách giữa các hàng)
+
+2. các thuộc tính trong nhóm flex-item
++, flex-grow : lấp đầy khoảng cách còn thừa của  flex container (mặc định =0)
 
 
++,flex-shrink
+
++, flex-basis : bị chặn bởi min-width , max-width
+
++,flex : grow- shinrnk -basis
+
++, align-seft:
  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .box {
     width: 400px;
     height: 300px;
     border: 1px solid rgb(230, 26, 26);
     margin: 30px auto;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: flex-start;
+    /* align-items: ;
+    flex-wrap: wrap;
+    /* align-content: center;
+    gap: 10px 20px;
+    */
 }
 
 .item {
@@ -55,4 +77,20 @@ column-gap)
     color: #f7eded;
     padding: 10px;
     border: 1px solid #ffff;
+    /* /* flex-grow: 1;
+    flex-shrink: 0; 
+    flex-basis: 60px; */
+    flex: 0 1 75px
+}
+
+/* .item :nth-child(2) {
+    flex-grow: 2;
+} */
+.item:nth-child(4) {
+    align-self: center;
+}
+
+.item:nth-child(2) {
+    display: flex;
+    align-items: center;
 }

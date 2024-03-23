@@ -1,0 +1,42 @@
+/* 
+trasision: nhóm các thuốc tính để thiết lập thời gian chuyển động của các thuộc tính css
+1. transition-property :none | all |
+ten-thuoc-tinh
+transition-duration: value + unit ( s,ms) 
+transition-delay
+transition-timinng-fuction : quy định tốc dộ qua mỗi giai đaonj chuyển động:
+1.ease ---> chậm-nhanh-chậm
+2.linear----> tốc độ đều
+3.ease-in--->chậm -nhanh
+4.ease-out---->nhanh -chậm
+5.ease-in-out--->chậm-nhanh-chậm
+6.cubic-bezier (p1,p2,p3,p4)--->
+                                                                        
+ lưu ý : thuộc tính này chỉ tác dụng với cá thuộc tính có giá trị là số */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid red;
+    margin-top: 30px;
+
+}
+
+.box h2 {
+    transition-property: padding-left;
+    transition-duration: 1s;
+    /* transition-delay: 1s; */
+    transition-timing-function: cubic-bezier(.08, .78, 1, -0.56);
+}
+
+.box:hover h2 {
+    padding-left: 100px;
+    /* padding-top: 100px */
+    /* visibility: hidden;
+    opacity: 0; */
+}

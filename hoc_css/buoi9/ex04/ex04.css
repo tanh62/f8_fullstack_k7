@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.partners {
+    padding: 30px;
+}
+
+.partners .partners-inner {
+    max-width: 1000x;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    gap: 50px;
+}
+
+.partners .partners-inner .item {
+    padding: 0 30px;
+}
+
+.partners .partners-inner img {
+    max-height: 60px;
+    width: auto;
+}
