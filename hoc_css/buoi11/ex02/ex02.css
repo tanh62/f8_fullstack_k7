@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    border-radius: 99px;
+    margin: 30px auto;
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.btn button {
+    padding: 50px;
+    display: block;
+    border: 0;
+    background: green;
+    cursor: pointer;
+
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 100%;
+    background: red;
+    /* border-radius: 99px; */
+    transition: right 0.3s ease;
+}
+
+.btn span {
+    position: relative;
+}
+
+.btn:hover::before {
+    right: 0;
+}

@@ -1,0 +1,49 @@
+/* thuộc tính transform : biến đổi hình dạng html
+-xoay
+-phóng to
+-thu nhỏ
+-xoay
+-di chuyển 
+
+
+cú pháp : transform : value
+-rotate: (angle : dngf để xoay 2d theo trục z)
+-rotateX: (dùng để xoay theo trục X
+-scale(x,y) : phongs to , thu nhỏ theo tỷ lệ( nhỏ hơn 1 là thu nhỏ )
+-scaleX(value) : Phóng to theo trục X
+-scaleY(value) : Phóng to theo trục Y
+-skew(x,y) : Nghiêng theo góc x,y
+-skewX
+-skewY
+translate(x , y ) : di chuyển theo x , y
+-translatY: di chuyen theo truc Y
+lưu ý : neX: di chuyen theo truc X
+translateếu đơn vị là phần trăm thì sẽ tỷ lêj với kích thước của chính nó
+
+
+các thuộc tính bổ sng 
+-rotate: tơng tự transform: rotate ()
+-scale: tương tự transform : scale ()
+-translate: tương tự transform :translate
+
+
+thuộc tính transform-origin: x y ---> xác định vị trí của trcj ( mặc định là 50% 50%)*/
+
+.warp {
+    border: 2px solid red;
+    padding: 30px;
+}
+
+.box {
+    ansition: all 0.4s linear;
+    wi trdth: 300px;
+    height: 300px;
+    background: green;
+    margin: 30px auto;
+}
+
+.warp:hover .box {
+    /* transform: rotate(360deg); */
+    /* transform: translate(100px, -100px); */
+    transform-origin: 0 0 scale: 1 1.5;
+}
