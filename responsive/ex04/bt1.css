@@ -536,7 +536,7 @@ footer li {
 }
 
 footer li:hover a {
-    color: #333 !important;
+    color: #333;
 }
 
 .end p {
