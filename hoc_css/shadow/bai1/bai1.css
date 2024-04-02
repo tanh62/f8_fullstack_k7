@@ -36,13 +36,13 @@ body {
 .block input:nth-of-type(1):checked~.infor .btn> :first-child {
     color: var(--para-color);
     background-color: white;
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease;
 }
 
 .block input:nth-of-type(2):checked~.infor .btn> :last-child {
     color: var(--para-color);
     background-color: white;
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease;
     overflow: hidden;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .para {
     margin-bottom: 70%;
-    color: black;
+    color: rgb(247, 246, 246);
 }
 
 .block .infor .para p:nth-of-type(1) {
