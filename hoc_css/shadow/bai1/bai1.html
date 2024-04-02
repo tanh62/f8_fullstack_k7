@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikinger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./exercise/scss/style.scss" />
+    <link rel="stylesheet" href="bai1.css" />
+</head>
+
+<body>
+    <div class="block">
+        <input type="radio" name="log" id="login" hidden checked />
+        <input type="radio" name="log" id="reg" hidden />
+        <div class="decor"></div>
+        <div class="infor">
+            <div class="para">
+                <p> <b>Welcome to</b></p>
+                <p>Vikinger</p>
+                <p>
+                    The next generation social network & community! Connect with your
+                    friends and play with our quests and badges gamification system!
+                </p>
+            </div>
+
+            <div class="btn">
+                <label for="login">Login</label>
+                <label for="reg">Resgister</label>
+            </div>
+        </div>
+        <div class="form">
+            <div class="log">
+                <div class="content">
+                    <p>Account Login</p>
+                    <div class="form-sub">
+                        <input type="text" name="username" id="username" autofocus />
+                        <label for="username">Username or Email</label>
+                    </div>
+                    <div class="form-sub">
+                        <input type="password" name="password" id="password" />
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <div class="remember">
+                            <input type="checkbox" name="remember" id="remember" hidden />
+                            <label for="remember">
+                                <i class="fa-solid fa-square-check"></i>
+                            </label>
+                            <label for="remember"><span>Remember</span></label>
+                        </div>
+                        <div class="forgot">
+                            <a href="#">Forgot Password? </a>
+                        </div>
+                    </div>
+                    <div class="btn-log">
+                        <button>Login to your Account</button>
+                        <p>Login with your Social Account</p>
+                        <div class="line"></div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-spotify"> </i></a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reg">
+                <p>Create your Account!</p>
+                <form action="#">
+                    <div class="form-sub">
+                        <input type="email" name="youremail" id="youremail" autofocus />
+                        <label for="youremail">Username or Email</label>
+                    </div>
+                    <div class="form-sub">
+                        <input type="text" name="username" id="username" autofocus />
+                        <label for="username">Username or Email</label>
+                    </div>
+                    <div class="form-sub">
+                        <input type="password" name="password" id="password" />
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-sub">
+                        <input type="password" name="re-password" id="re-password" />
+                        <label for="re-password"> Repeat Password</label>
+                    </div>
+                    <div class="send">
+                        <input type="checkbox" name="send" id="send" hidden />
+                        <label for="send">
+                            <i class="fa-solid fa-square-check"></i>
+                        </label>
+                        <label for="send">
+                            <span>Send me news and updates via email</span></label>
+                    </div>
+                </form>
+                <div class="btn-reg">
+                    <button>Resgister </button>
+                    <p>
+                        You'll receive a confirmation email in your inbox with a link to
+                        activate your account. If you have any problems,
+                        <a href="#">contact us!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
