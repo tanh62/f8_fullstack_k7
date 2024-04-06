@@ -1,0 +1,301 @@
+/* Reset và thiết lập cơ bản */
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap);
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #ffa500;
+}
+
+/* Phần header */
+.logo span {
+    color: #ffa500;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: var(--orange);
+    border-radius: 99px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Phần hero */
+.hero {
+    background-image: url('https://www.andbeyond.com/wp-content/uploads/sites/5/Chhatrapati-Shivaji-Terminus-railway-station-mumbai.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: var(--orange);
+    border-radius: 99px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Phần offer */
+.offer {
+    background-color: var(--orange);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.offer-content {
+    text-align: center;
+}
+
+.offer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.offer button {
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+
+/* Phần experience */
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.video-container {
+    flex: 1;
+    max-width: 600px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+    padding: 40px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.content button {
+    padding: 10px 20px;
+    background-color: var(--orange);
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--orange);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(25% - 30px);
+    margin: 15px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h2,
+.card p {
+    margin: 10px;
+}
+
+.card .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: var(--orange);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.services-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.services-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-card {
+    flex: 0 0 calc(33.333% - 20px);
+    background: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #FFB74D;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card.highlight {
+    background: #FCE4EC;
+    border-color: #FFCDD2;
+}
+
+.service-icon {
+    height: 60px;
+    margin-bottom: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-title {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.service-description {
+    color: #666;
+}
