@@ -1,0 +1,98 @@
+//câu lênh rẽ nhánh 
+// toán tử so sánh: >, <, >=, <=, !=
+// - and: đúng khi tất cả các biểu thức đều đúng
+// -or : sai khi tất cả biếu thức đều sai 
+// -not :ngược lại
+$a: 17;
+
+@if ($a >=5 and $a <=15) {
+    .box {
+        color: red;
+    }
+}
+
+@else {
+    .box {
+        color: gray;
+    }
+}
+
+@if ($a <5) {
+    .box {
+        color: red
+    }
+}
+
+@else if ($a >=5 and $a < 10) {
+    .box {
+        color: green;
+    }
+}
+
+@else if ($a >=10 and $a <15) {
+    .box {
+        color: yellow;
+    }
+
+}
+
+@else {
+    .box {
+        color: blue;
+    }
+}
+
+//kế thưuaf 
+//1. @extend
+//2. placeholder (@extend)
+//3. @mixin vaf @include
+
+
+@import "partials/variables";
+@import "partials/palceholders";
+@import "partials/mixin";
+
+
+//mixin 
+@mixin center($width, $spacer: 0) {
+    margin: $spacer auto;
+    width: $width;
+}
+
+// @mixin container {
+//     .container {
+//         @include center;
+//     }
+// }
+
+.box {
+    background: $primaryColor;
+    padding: 30px 0;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.posts {
+    background: gray;
+    @extend .box;
+    @extend %transition
+}
+
+.products {
+    background: #fff;
+    @extend .box;
+    @extend %transition
+}
+
+.testiomnials {
+    background: gold;
+    @include center(1200px, 30px);
+}
+
+
+// tách file :
+//cách 1 : @import
+//cáhc 2: @use
+//cách 3: @forward
+//lưu ý khi tạo file để import: bắt đầu bằn gạch dưới (_)
