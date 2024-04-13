@@ -1,0 +1,11 @@
+@use "./variables" as bien;
+@forward "./variables";
+@forward "./footer" as footer-*;
+$hderBg: blue;
+
+$fontSize: 16px;
+
+header {
+    padding: 30px;
+    font-size: $-fontSize;
+}

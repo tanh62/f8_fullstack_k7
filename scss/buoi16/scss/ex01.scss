@@ -1,0 +1,21 @@
+//  @use "./partials/header"; //namespace: header
+//  @use "./partials/footer"; //namespace: footer
+// @use "./partials/variables" as bien; //namespace
+//  @use "./partials/mixin";
+@forward "./partials/variables";
+@forward "./partials/footer" as footer-*; //thêm tiền tố khi forward
+// truy cập: tenmanespace.tenbien , tennamespace.tenham, tennamespace
+$-fontSize: 16px;
+
+header {
+    padding: 30px 0;
+    font-size: $-fontSize;
+
+    .inner {
+        background: bien.$primaryColor;
+    }
+}
+
+footer {
+    color: header.$footer-primaryColor;
+}
