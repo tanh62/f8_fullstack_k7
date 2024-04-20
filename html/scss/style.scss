@@ -13,8 +13,14 @@
 // pages
 
 //1.Home
+@use './pages/home/hero';
 @use './pages/home/index' as home;
-
+@use './pages/home/static';
+@use './pages/home/product';
+@use './pages/home/news';
 
 //2.products
 @use './pages/products/index' as products;
+@use './pages/products/bestseller';
+@use './pages/products/new_products';
+@use './pages/products/superiority';

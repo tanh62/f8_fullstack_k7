@@ -1,0 +1,43 @@
+.superiority {
+    margin-bottom: 140px;
+
+    .superiority-list {
+        .superiority-item {
+            padding: 20px 12px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100%;
+            column-gap: 15px;
+
+            .superiority-icon {
+                flex-basis: 56px;
+
+                img {
+                    display: block;
+                }
+            }
+
+            .superiority-info {
+                display: flex;
+                flex-direction: column;
+                row-gap: 6px;
+                flex: 1;
+
+                p {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    line-height: 1.33;
+                    // padding-bottom: 6px;
+                }
+
+                span {
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+//  End superiority
