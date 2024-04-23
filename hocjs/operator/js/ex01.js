@@ -75,7 +75,7 @@ lưu ý : "== " là so sánh bằng nhưng chỉ so sánh giá trị
 /* 
 && --> kết hợp and
 || --> kết hợp or
-! --> kết họp not
+!  --> kết họp not
 
 thứ tự uu tiên: ngoặc tròn --> and --> or --> not
 */
