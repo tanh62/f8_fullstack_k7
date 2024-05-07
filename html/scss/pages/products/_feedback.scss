@@ -1,0 +1,104 @@
+.feedback {
+    margin-bottom: 106px;
+
+    .feedback-img {
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 440px;
+            height: 440px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: -1;
+            border-radius: 50%;
+            background: #fff0e7;
+
+            @media screen and (max-width: 991.98px) {
+                width: 350px;
+                height: 350px;
+            }
+
+            @media screen and (max-width: 767.98px) {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        img {
+            @media screen and (max-width: 767.98px) {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+
+    .feedback-content {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.33;
+
+            @media screen and (max-width: 767.98px) {
+                text-align: center;
+            }
+        }
+
+        .form {
+            margin-top: 26px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px 23px;
+
+            input,
+            textarea {
+                border-radius: 6.667px;
+                border: 0.833px solid #a3a3a3;
+                padding: 13px;
+
+                &::-webkit-input-placeholder,
+                &::-moz-placeholder,
+                &:-ms-input-placeholder {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #a3a3a3;
+                }
+            }
+
+            input#name,
+            textarea {
+                width: 100%;
+            }
+
+            input#email,
+            input#phone-number {
+                width: calc(50% - 12px);
+            }
+        }
+
+        button {
+            margin-top: 26px;
+            padding: 13px 55px;
+            align-self: flex-end;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 6.667px;
+            // background: $primaryColor;
+            transition: background-color 0.5s ease;
+
+            @media screen and (max-width: 991.98px) {
+                font-size: 1.6rem;
+            }
+
+            &:hover {
+                background: #216000;
+            }
+        }
+    }
+}

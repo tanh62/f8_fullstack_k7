@@ -1150,4 +1150,101 @@ textarea {
   font-weight: 500;
 }
 
+.feedback {
+  margin-bottom: 106px;
+}
+.feedback .feedback-img {
+  position: relative;
+}
+.feedback .feedback-img::before {
+  content: "";
+  width: 440px;
+  height: 440px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background: #fff0e7;
+}
+@media screen and (max-width: 991.98px) {
+  .feedback .feedback-img::before {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .feedback .feedback-img::before {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .feedback .feedback-img img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+.feedback .feedback-content {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.feedback .feedback-content span {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.33;
+}
+@media screen and (max-width: 767.98px) {
+  .feedback .feedback-content span {
+    text-align: center;
+  }
+}
+.feedback .feedback-content .form {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 23px;
+}
+.feedback .feedback-content .form input,
+.feedback .feedback-content .form textarea {
+  border-radius: 6.667px;
+  border: 0.833px solid #a3a3a3;
+  padding: 13px;
+}
+.feedback .feedback-content .form input::-webkit-input-placeholder, .feedback .feedback-content .form input::-moz-placeholder, .feedback .feedback-content .form input:-ms-input-placeholder,
+.feedback .feedback-content .form textarea::-webkit-input-placeholder,
+.feedback .feedback-content .form textarea::-moz-placeholder,
+.feedback .feedback-content .form textarea:-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #a3a3a3;
+}
+.feedback .feedback-content .form input#name,
+.feedback .feedback-content .form textarea {
+  width: 100%;
+}
+.feedback .feedback-content .form input#email,
+.feedback .feedback-content .form input#phone-number {
+  width: calc(50% - 12px);
+}
+.feedback .feedback-content button {
+  margin-top: 26px;
+  padding: 13px 55px;
+  align-self: flex-end;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 6.667px;
+  transition: background-color 0.5s ease;
+}
+@media screen and (max-width: 991.98px) {
+  .feedback .feedback-content button {
+    font-size: 1.6rem;
+  }
+}
+.feedback .feedback-content button:hover {
+  background: #216000;
+}
+
 /*# sourceMappingURL=style.css.map */
