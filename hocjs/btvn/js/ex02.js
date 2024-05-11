@@ -59,7 +59,6 @@ var arrangeArr = arrFour.sort(function (a, b) {
     return a - b;
 });
 console.log(`Mảng sau khi sắp xếp là ${arrangeArr}`);
-var newArrangeArr = arrangeArr.concat(newNumber).sort(function (a, b) {
-    return a - b;
-});
+
+
 
