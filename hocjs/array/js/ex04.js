@@ -1,4 +1,4 @@
-9: 48
+
 // var numbers = [1, 2, 5, 7, 9];
 // //some(callback)
 // /*
@@ -71,7 +71,33 @@ var arrB = [5, 2, 6, 7, 1];
 
 //tìm hiểu vòng lặp reduce
 
+var users = ["An", "Tùng", "Đạt", "Quân", "Tùng", "Nam"];
 
+// Sử dụng reduce để tạo một mảng mới không có phần tử trùng lặp
+var uniqueUsers = users.reduce((unique, item) => {
+    // Kiểm tra nếu phần tử chưa tồn tại trong mảng kết quả thì thêm vào
+    return unique.includes(item) ? unique : [...unique, item];
+}, []);
+
+console.log(uniqueUsers);
+
+var users = ["An", "Tùng", "Đạt", "Quân", "Tùng", "Nam"];
+
+var uniqueUsers = users.reduce((unique, item) => {
+    return unique.includes(item) ? unique : [...unique, item];
+}, []);
+
+console.log(uniqueUsers);
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var size = 2;
+var result = [];
+
+for (var i = 0; i < numbers.length; i += size) {
+    result.push(numbers.slice(i, i + size));
+}
+
+console.log(result);
 
 
 
