@@ -34,36 +34,3 @@ console.log(getError("password"));
 
 //B3:
 
-const returnObjectB3 = function (name, email, password) {
-    var object = {};
-    object["name"] = name;
-    object["email"] = email;
-    object["password"] = password;
-    return object;
-};
-var data = [];
-const handleRegister = function (name, email, password) {
-    if (arguments.length === 3) {
-        var user = returnObjectB3(name, email, password);
-        user["role"] = "user";
-        data.push(user);
-    } else {
-        console.log("tao User khong thanh cong");
-        return 0;
-    }
-};
-const login = function (email, password) {
-    var check = data.some(function (item, index) {
-        return item["email"] === email && item["password"] === password;
-    });
-    //   console.log(check);
-    if (check) {
-        var dataUser = {};
-        dataUser = data.find(function (item, index) {
-            return item["email"] === email;
-        });
-        console.log(dataUser);
-    } else {
-        console.log("Thông tin đăng nhập không hợp lệ");
-    }
-};
