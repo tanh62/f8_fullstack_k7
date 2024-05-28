@@ -48,7 +48,7 @@ function Person(name, email, age) {
 // var person2 = new Person(" Hoàng An 2", "hoangan2@gmail,com", 33);
 // console.log(person2);
 // console.log(person2.message);
-
+console.log(p);
 
 // //Kiểm tra 1 object được tạo từ hàm tạo nào?
 // console.log(person1.constructor.name);
@@ -78,6 +78,7 @@ Person.getMessage = function () {
 Person.something = function () {
     console.log("something");
     console.log(new this().a);
+
 }
 Person.something();
 // var person1 = new Person(" Hoàng An 1", "hoangan@gmail,com", 32);
