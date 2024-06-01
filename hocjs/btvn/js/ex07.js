@@ -32,6 +32,7 @@ Number.prototype.getCurrency = function (unit) {
     } else {
         console.log("Đơn vị chưa có trong danh sách");
         return 0;
+
     }
     return price;
 };
