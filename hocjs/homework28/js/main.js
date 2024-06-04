@@ -23,16 +23,6 @@ todoForm.addEventListener("submit", function (e) {
     }
 });
 
-
-todoWrapper.addEventListener("click", function (e) {
-    console.log(e.target.className);
-    if (e.target.className === "") {
-        e.target.classList.add("checked");
-    } else if (e.target.className == "checked") {
-        e.target.classList.remove("checked");
-    }
-});
-
 todoWrapper.addEventListener("click", function (e) {
     var valueInput = document.querySelector(".todo-item p");
     var inputEdit = document.querySelector(".todo-input-item");
@@ -48,11 +38,6 @@ todoWrapper.addEventListener("click", function (e) {
     <button type="button" class="todo-btn-item">Add Task</button>
   </form>`;
         todoWrapper.insertAdjacentHTML("beforeend", html);
-    }
-    if (e.target.className === "todo-btn-item") {
-        e.target.parentElement.remove();
-        var valueEdit = addTodoList(inputEdit.value);
-        todoWrapper.insertAdjacentHTML("beforeend", valueEdit);
     }
 });
 
