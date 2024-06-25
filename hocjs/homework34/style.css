@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.sortable {
+    width: 35%;
+    padding: 15px;
+    background-color: #4286F4;
+}
+
+.list_item {
+    /* width: 25%; */
+    padding: 8px;
+    border: 1px solid #eee;
+    background-color: #8BB3F4;
+    font-size: 18px;
+}
+
+.list_item.active {
+    background-color: #FF6F00;
+}
+
+.list_item+.list_item {
+    margin-top: 1px;
+}
