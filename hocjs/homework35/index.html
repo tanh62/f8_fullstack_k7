@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h4>Doc Editor</h4>
+        <div class="controls">
+            <div class="main-controls">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        File
+                    </button>
+                    <div class="dropdown-menu">
+                        <button id="new-btn" class="dropitem">New</button>
+                        <button id="txt-btn" class="dropitem">Save as TXT</button>
+                        <button id="pdf-btn" class="dropitem">Save as PDF</button>
+                    </div>
+                </div>
+                <input type="text" name="" value="untitled" id="filename-input">
+            </div>
+            <div class="controls-btn-container">
+                <button class="btn-dark" id="btn-uppercase">
+                </button>
+                <button class="btn-dark" id="btn-bold">
+                    <i class="fa-solid fa-bold"></i>
+                </button>
+                <button class="btn-dark" id="btn-underline">
+                    <i class="fa-solid fa-underline"></i>
+                </button>
+                <button class="btn-dark" id="btn-italic">
+                    <i class="fa-solid fa-italic"></i>
+                </button>
+                <input type="color" class="btn-color" id="btn-color">
+            </div>
+        </div>
+        <div class="text-content" contenteditable="true" spellcheck="false"></div>
+        <div class="counter">
+            <span class="char-count">
+                số ký tự: <span>0</span>
+            </span>
+            <span class="word-count">
+                số từ: <span>0</span>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
