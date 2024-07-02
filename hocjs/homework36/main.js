@@ -7,15 +7,12 @@ let button = document.querySelector("button");
 button.disabled = true;
 button.addEventListener("click", () => {
     if (count == 0) {
-        window.location.href = "";
+        window.location.href = "https://www.youtube.com/";
     }
 });
 document.addEventListener("keydown", (e) => {
     e.preventDefault();
 });
-// document.addEventListener("contextmenu", function (event) {
-//     event.preventDefault(); // Ngăn chặn hành động mặc định của trình duyệt
-// });
 let count = 30;
 const counterElement = document.querySelector(".count");
 console.log(counterElement);
