@@ -98,6 +98,9 @@ dots.forEach((element, index) => {
     });
 });
 
+
+
+
 var checkMouse = false;
 let clientX = 0;
 let offsetX = 0;
@@ -110,9 +113,11 @@ var handleMouse = function (e, position) {
     difference = position + translateX;
     if (translateX > 0) {
         if (
+
             Math.abs(difference) <= Math.abs(position + slideThreshold) &&
             Math.abs(position) <= totalWidth - itemWidth &&
             Math.abs(position) >= 0
+
         ) {
             handlePrevBtn();
             difference += -translateX + itemWidth;
@@ -164,3 +169,7 @@ prevBtn.addEventListener("click", function () {
 setInterval(function () {
     handleNextBtn();
 }, 5000);
+
+nextBtn.addEventListener("click", function () {
+
+});

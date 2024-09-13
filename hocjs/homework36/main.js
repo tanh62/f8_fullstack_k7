@@ -18,6 +18,7 @@ const counterElement = document.querySelector(".count");
 console.log(counterElement);
 const decrement = 1;
 const interval = 1000;
+
 let lastTime = performance.now();
 document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "hidden") {

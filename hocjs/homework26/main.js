@@ -7,12 +7,15 @@ var handleUpdateValue = function (value) {
     progress.style.width = `${value}%`;
 };
 
-//Tính độ dài của progress-bar
+//Tính độ dài của progress-bar 
 var progressBarWidth = progressBar.clientWidth;
 var isDrag = false;
 var initialClientX;
 var initialValue = 0;
 var value;
+
+
+
 
 progressBar.addEventListener("mousedown", function (e) {
     if (e.which === 1) {
@@ -23,8 +26,9 @@ progressBar.addEventListener("mousedown", function (e) {
         handleUpdateValue(value);
         currentTimeEl.innerText = getTime((audio.duration * value) / 100);
     }
-});
 
+});
+progressSPAN.ADDEVENR LISERNER(M)
 progressSpan.addEventListener("mousedown", function (e) {
     e.stopPropagation();
     if (e.which === 1) {
@@ -108,7 +112,7 @@ audio.addEventListener("timeupdate", function () {
     if (!isDrag) {
         currentTimeEl.innerText = getTime(audio.currentTime);
 
-        //Lấy ra tỷ lệ phần trăm dựa vào currentTime và duration
+        //Lấy ra tỷ lệ phần trăm dựa vào currentTime và durationt
         var value = (audio.currentTime * 100) / audio.duration;
 
         handleUpdateValue(value);
