@@ -97,10 +97,6 @@ dots.forEach((element, index) => {
         }
     });
 });
-
-
-
-
 var checkMouse = false;
 let clientX = 0;
 let offsetX = 0;
@@ -173,3 +169,7 @@ setInterval(function () {
 nextBtn.addEventListener("click", function () {
 
 });
+
+
+
+
